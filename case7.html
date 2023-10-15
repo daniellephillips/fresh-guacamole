@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Rapid Storage User Testing</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <!-- Font Awesome if you need it
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  -->
+  <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <!--Replace with your tailwind.css once created-->
+
+  <style>
+
+    html {
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    }
+
+    #header-fixed {
+      position: fixed;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+    }
+
+    .gradient {
+      background-image: linear-gradient(-225deg, #363936 0%, #d8f0ff 100%);
+    }
+
+    but
+
+
+
+ton,
+    .gradient2 {
+      background-color: #464d48;
+      background-image: linear-gradient(315deg, #d0ecd2 0%, #8b8265 74%);
+    }
+
+.chip {
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #cbd5e0;
+    color: #2d3748;
+    font-weight: 700;
+    border-radius: 9999px;
+}
+.pyt-12 {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+.shadow-nuxt {
+    box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+}
+
+  </style>
+</head>
+
+<body class="gradient leading-relaxed tracking-wide flex flex-col">
+  <!--Nav-->
+  <header id="header-fixed" class="bg-gray-50 flex justify-between items-center px-4 py-2">
+    <div class="flex items-center justify-between px-4 py-3 p-0">
+      <a href="index.html">
+        <div class="text-gray-500">
+<svg class="h-6 sm:h-12 fill-current" viewBox="0 0 60 60">
+    <title>RSTe</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ddoglogo1-pixen-redux" fill="#464C4B" fill-rule="nonzero">
+            <g id="Group" transform="translate(25.001558, 26.530461) scale(-1, 1) rotate(-180.000000) translate(-25.001558, -26.530461) translate(0.006232, -0.000000)">
+                <path d="M5.79386102,53.0523528 C2.1455282,53.0282019 0.554689935,52.9596447 0.273449673,52.8147398 C0.22592708,52.790589 0.0958242443,52.6269866 0.0521969461,52.5358367 C-0.104393892,52.209411 0.0872545964,51.8970084 0.691025242,51.4973512 C0.772826426,51.4435961 0.883452789,51.3695855 0.937207853,51.3337488 C1.21533188,51.1498909 1.56512932,50.8655344 1.90713618,50.5437831 C2.26082892,50.211904 2.68619508,49.721876 2.9074478,49.391555 C3.51667186,48.4831723 3.68261141,47.156435 3.74104082,42.7306014 C3.75740106,41.4887816 3.76441259,39.7958866 3.76441259,36.8315675 C3.76441259,33.8212839 3.76441259,33.7799938 3.77921471,33.7815519 C3.78778436,33.7815519 3.79401683,33.7846681 3.79323777,33.7877844 C3.79245871,33.7901215 3.82517918,33.8306326 3.86646931,33.8773761 C4.36818323,34.4492054 4.77796821,35.0148021 5.13321907,35.6294796 C5.2672172,35.8608601 5.34746027,36.0119975 5.56170146,36.4397008 C5.78061701,36.8775319 5.90994079,37.1229355 6.04549704,37.3589903 C6.41788719,38.0095045 6.75599875,38.4348707 7.29744469,38.9358055 C7.84979744,39.4468682 8.68572764,40.1036148 9.19055781,40.423808 C10.3116236,41.1350888 11.2862262,41.3719227 13.5727641,41.4880025 C15.7214085,41.5970707 17.1689,41.5666874 18.4886257,41.3859458 C19.5395762,41.2418199 20.5866313,40.966033 21.3236211,40.6388283 C22.0691804,40.3085073 23.2595824,39.6735743 24.2108133,39.100966 C24.6704581,38.8236211 26.8510439,37.4937675 26.8619508,37.4844188 C26.8674042,37.4789654 26.9523216,37.1385167 27.050483,36.7271736 C27.2865379,35.7432222 27.3317233,35.5749455 27.4555936,35.2087878 C27.8155189,34.1500467 28.3390464,33.399813 29.1983484,32.7142412 C29.8426301,32.2008414 30.727641,31.6905578 31.9546588,31.124961 C32.6799626,30.7899657 33.6405422,30.3856342 34.7164226,29.9618261 C35.7198504,29.5668433 35.9613587,29.4686818 36.3727018,29.2894983 C37.2320037,28.91555 37.9456217,28.5486133 38.4504519,28.2229667 C38.7511686,28.02976 38.968526,27.8599252 39.153942,27.6752883 C39.3712995,27.4594889 39.4686818,27.3060143 39.5193207,27.0987847 C39.5528202,26.9593331 39.5808663,26.8081957 39.60268,26.6438143 C39.6182611,26.5308507 39.6198193,26.4786538 39.6198193,26.2340293 C39.6198193,25.9403241 39.6143658,25.8678716 39.576971,25.6653163 C39.4850421,25.1682767 39.2770333,24.7055157 38.9498286,24.2708009 C38.8321907,24.11421 38.7200062,23.9864444 38.5197881,23.7807728 C37.8583671,23.1037706 37.0870988,22.1938299 36.3913992,21.2675288 C35.6918043,20.3373325 35.2952633,19.9618261 34.6883764,19.656435 C34.4889374,19.5559364 34.0970707,19.3962294 33.8446557,19.312091 C32.910564,19.0012465 31.2488314,18.7706451 29.325335,18.6849486 C28.7862262,18.6615768 28.4621377,18.6545653 27.8334372,18.6545653 C26.6570583,18.6545653 25.820349,18.6981926 24.8535369,18.809598 C24.1523839,18.8898411 23.9576192,18.902306 23.3850109,18.9030851 C22.9277033,18.9030851 22.8560299,18.8999688 22.5631038,18.8711437 C21.031474,18.7200062 19.8706762,18.081957 18.8649112,16.8377999 C18.5571829,16.4560611 18.320349,16.1062636 17.9565285,15.4947024 C17.5895918,14.8776878 17.3192583,14.5567155 16.957775,14.3089748 C16.7614522,14.1741976 16.5807105,14.0846058 16.2020879,13.9342474 C15.6092241,13.6981926 15.3544718,13.557962 15.1199751,13.3359302 C14.8776878,13.1068869 14.6922717,12.7976005 14.484263,12.2771892 C14.365067,11.9780305 14.1695232,11.4163291 14.126675,11.2488314 C14.0807105,11.0673107 14.0448738,10.8608601 14.0199439,10.6372702 C14.0028046,10.4791212 13.9965721,9.973512 14.008258,9.77407292 C14.0861639,8.50342786 14.5123091,6.96790277 15.343565,4.96182611 C15.6497351,4.22249922 16.0010907,3.43954503 16.521502,2.33639763 C17.249143,0.793081957 17.3177002,0.645060767 17.5077906,0.205671549 L17.5919289,0.0109068246 L17.5553132,0.00623247117 C17.4929885,-0.00155811779 18.4738236,-0.000779058897 18.9716423,0.00701153007 C21.5269554,0.0483016516 23.7122156,0.160486133 25.2274852,0.327204737 C26.627454,0.481458398 28.4270801,0.831255843 30.1160798,1.27765659 C33.6327516,2.20785291 36.9538797,3.57432222 39.2817077,5.04985977 C41.2254596,6.28233094 43.0585852,8.0118417 44.6073543,10.0763478 C47.0286694,13.3032097 48.7387036,17.2771892 49.5138672,21.48177 C49.9781864,24.0012465 50.1036148,26.5846058 49.8878155,29.2295108 C49.7125273,31.3836086 49.2972889,33.5439389 48.6763789,35.5243066 C48.3320349,36.6220006 47.9183546,37.685416 47.3979433,38.8080399 C47.2764101,39.0713618 46.9632284,39.7031786 46.8268931,39.9610471 C45.8631973,41.7840449 44.7265503,43.4208476 43.4146151,44.8730134 C42.9541913,45.383297 42.3075725,46.0299159 41.8097538,46.4786538 C39.4118105,48.6397632 36.5807105,50.238392 33.4426613,51.2052041 C29.3043004,52.4805235 24.8301652,52.9292615 15.1893113,53.0375506 C13.1777812,53.060494 8.12013088,53.0679339 5.79386102,53.0523528 Z" id="Path"></path>
+                <path d="M18.8002493,37.8053911 C18.769866,37.7352758 18.7457152,37.5475226 18.7285759,37.2460268 C18.7083203,36.8775319 18.7176691,35.9340916 18.7496105,35.2399501 C18.7909006,34.3346837 18.7862262,33.4691493 18.7340293,32.6223122 C18.637426,31.0649735 18.3928015,29.6751324 18.0702711,28.8594578 C17.9775631,28.6257401 17.8451231,28.399034 17.6441259,28.1325958 C17.3106887,27.6908694 16.9390776,27.3371767 16.4397008,26.9866002 C16.1101589,26.7544406 15.88579,26.6570583 15.6411655,26.6391399 C15.4721097,26.6258959 15.2196946,26.6773138 14.8527579,26.7980679 C14.0168277,27.0722967 13.5462761,27.5148021 13.0640386,28.4777189 C12.923808,28.7597382 12.8209723,28.9911187 12.6378934,29.4437519 C12.4259894,29.9672795 12.261608,30.3155189 12.0021814,30.7884076 C11.1600187,32.327828 9.93611717,33.8797133 8.97631661,34.6268308 C8.67793705,34.8582113 8.38656902,35.0140231 8.16999065,35.0576504 C8.10922406,35.0701153 7.9682144,35.0693362 7.92614522,35.0560922 C7.7976005,35.0179184 7.85992521,34.8792459 8.12714241,34.6128077 C8.29541913,34.444531 8.45123091,34.3081957 8.92178249,33.9124338 C9.35649735,33.5470552 9.71408538,33.1964787 9.99376753,32.8614833 C10.1877532,32.6293238 10.4393892,32.275631 10.6372702,31.9562169 C10.9714864,31.4186663 11.2503895,30.9013711 11.8977875,29.6190402 C12.2725148,28.8765971 12.4104082,28.610938 12.5895918,28.2829542 C13.3756622,26.8432533 13.9404799,26.1452166 14.5660642,25.8398255 C14.8356186,25.7081645 15.0654409,25.6575257 15.3918666,25.659049 C15.6863509,25.6598629 15.9753817,25.7081645 16.361795,25.8211281 C16.9803677,26.0018697 17.4065129,26.2589592 17.7547523,26.6625117 C18.2712683,27.262387 18.6047055,28.2440012 18.8111561,29.774852 C19.073699,31.7186039 19.2030227,34.7693986 19.0923964,36.3929573 C19.0573387,36.9009037 18.9693051,37.5194765 18.901527,37.7306014 C18.8742599,37.817077 18.8610159,37.8381116 18.8345279,37.8381116 C18.8189467,37.8381116 18.8119352,37.8311 18.8002493,37.8053911 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+        </div>
+
+
+
+
+
+
+      </a>
+    </div>
+    <div class="pt-2 pb-4 flex p-0 text-sm sm:text-lg font-bold">
+      <a href="index.html#portfolio"
+        class="transition duration-300 block mt-2 px-4 py-1 text-gray-600 rounded-full hover:bg-gray-200">WORK</a>
+      <a href="index.html#about"
+        class="transition duration-300 mt-2 block px-4 py-1 text-gray-600 rounded-full hover:bg-gray-200 sm:ml-6">ABOUT</a>
+      <a href="docs/DCP_Resume_2020.pdf"
+        class="transition duration-300 block px-4 py-1 text-gray-600 rounded-full hover:bg-gray-200 mt-2 sm:ml-6">
+        RÉSUMÉ
+      </a>
+    </div>
+  </header>
+
+  <section data-aos="fade" data-aos-easing="ease-in-back" data-aos-offset="0" class="pyt-12 sm:py-20">
+    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" data-aos-easing="ease-in-out"
+      class="container max-w-5xl mx-auto text-center">
+      <h2 class="mt-4 text-2xl sm:text-4xl text-gray-400 font-black leading-tight m-auto">
+        Form Redesign
+      </h2>
+      <h1 class="text-3xl sm:text-5xl font-bold text-white">Marketplace Registration</h1>
+      <h2 class="mt-4 text-2xl sm:text-4xl text-gray-400">June 2016</h2>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 border-b shadow-nuxt">
+    <!-- <div class="container mx-auto flex flex-wrap items-center justify-between pb-12"></div>
+      <h2 class="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800 lg:mt-2">
+        Overview 
+      </h2>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+      </div> -->
+
+
+      <div class="px-6 sm:m-auto xl:px-0 xl:max-w-5xl lg:max-w-4xl md:max-w-3xl justify-center text-center">
+            <p class="text-gray-700 text-xl mt-6 leading-10">
+             We revised the existing marketplace registration form, reducing friction and optimizing for mobile with the goal to increase the registration completion rate across platforms. As the design lead, I worked with the Head of Product and the Marketplace Growth Engineering Team (June, 2016).
+ </p>
+
+      <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+        <div class="w-full sm:w-1/2 p-6 mt-6">
+           <div class="align-middle">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Role
+            </h3>
+            <p class="text-gray-600 mb-8 text-xl">
+            Lead UX
+            </p>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 p-6 mt-6">
+          <div class="align-middle">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Methods and tools
+            </h3>
+        <div class="flex-initial text-gray-600 mt-6">
+               <p class="chip mr-4 mt-4">Sketch</p>
+               <p class="chip mr-4 mt-4">Axure</p>
+               <p class="chip mr-4 mt-4">Bootstrap</p>
+               <p class="chip mr-4 mt-4">User Zoom</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="bg-white border-b py-8 shadow-nuxt">
+    <div class="container max-w-5xl mx-auto m-8">
+      <h2 class="w-full my-2 text-4xl font-black leading-tight text-lefttext-gray-800">
+       The Problem or Challenge
+      </h2>
+      <div class="w-full mb-4">
+        <div class="h-1 gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+      </div>
+<p class="text-gray-700 text-xl mt-6 leading-10">
+Based on user research, we saw that the current modal was triggered too early. New users were prompted
+                with the popup before they were able to engage with the site, and the lack of a strong value prop did
+                not help to communicate what would be exchanged in return for giving up their personal information.
+                Additionally, we were requiring 5 fields to be completed on the initial interaction with redundant email
+                confirmation fields and an additional checkbox section.  The initial registration modal was overwhelming and not optimized for mobile.
+</p>
+      <div class="flex flex-wrap">
+        <div class="w-5/6 sm:w-1/2 p-6">
+          <p class="text-gray-600 mb-8">
+            <ul class="text-gray-700 text-xl mt-6 leading-10 list-disc ml-8"> 
+                V1 Issues
+                <li>Modal larger than many mobile viewports </li>
+                <li>Distracting placeholder text within input fields</li>
+                <li>5 input fields and checkbox section in first interaction, too much cognitive overhead </li>
+                <li>Logo & value distracted from form elements </li>
+                <li>Value proposition in red text appeared to be an error message </li>
+          </p>
+        </div>
+        <div class="w-full mt-3 sm:w-1/2 p-6">
+<img src="img/V1+Registration.png">
+            <div class="text-xs">
+                <p>V1 Registration Modal</p>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+      <section class="bg-gray-100 border-b py-8 shadow-nuxt">
+      <div class="px-6 sm:m-auto xl:px-0 xl:max-w-5xl lg:max-w-4xl md:max-w-3xl justify-center">
+      <h4 class="text-2xl font-bold text-gray-600 mt-20">
+      The Redesign
+      </h4>
+      <h3 class="text-4xl font-bold text-gray-800 mt-4">
+      The Redesign
+      </h3>
+      <p class="text-gray-700 text-xl mt-6 leading-10">
+      As the Product Design lead, I worked with our Product Manager to streamline our registration process even further, reducing the initial input to one field, as well as introducing the ability to log in with Google. The updated flow expands on the progressive registration pattern by requiring only an email address as the initial input. After testing this flow on checkout, we saw a 16.8% increase from registration to checkout order success (Nov, 2016).
+      </p>
+      <div class="display-block bg-gray-300 px-4 pt-12 pb-6 rounded-lg mt-24">
+      <h4 class="text-2xl font-bold text-gray-600">
+      Redesigned Screens
+      </h4>
+      <div class="grid grid-cols-3 gap-4">
+      <div class="inline-block rounded-lg px-6 py-8 bg-gray-200">
+      
+            <img class="mt-16" src="img/image-asset.png">
+
+      <h5 class="text-xl text-gray-700 mt-4 font-bold">screen 1</h5>
+      </div>
+      <div class="inline-block rounded-lg px-6 py-8 bg-gray-200">
+      <img src="img/calendar.png" class="h-12">
+      <h5 class="text-xl text-gray-700 mt-4 font-bold">screen 2</h5>
+      </div>
+      <div class="inline-block rounded-lg px-6 py-8 bg-gray-200">
+      <img src="img/slack.png" class="h-12">
+      <h5 class="text-xl text-gray-700 mt-4 font-bold">Slack channel for Design System communication</h5>
+      </div>
+      <div class="inline-block rounded-lg px-6 py-8 bg-gray-200">
+      <img src="img/sync.png" class="h-12">
+      <h5 class="text-xl text-gray-700 mt-4 font-bold">Weekly UI Office Hours for in-depth discussion</h5>
+      </div>
+      </div> 
+      </div>
+      <div class="mt-20">
+      <hr>
+      </div>
+      <h4 class="text-2xl font-bold text-gray-600 mt-20">
+      The design process
+      </h4>
+      <h3 class="text-4xl font-bold text-gray-800 mt-4">
+      Optimizing the design library 
+      </h3>
+      <p class="text-gray-700 text-xl mt-6 leading-10">
+      The main component of the Design System for the product design team are the Sketch libraries. As I discovered in our research, the existing library lacked cohesiveness with the code base and it was a challenge to determine the best approach for UI in product designs; slowing down productivity and providing unnecessary tech debt. 
+      </p>
+      <p class="text-gray-700 text-xl mt-6 leading-10">  
+      To solve this I created three separate files utilizing components specific to Web, iOS and Android. In addition I created a comprehensive <b>Foundations</b> file which included colors, typography and iconography which is platform agnostic. In order to effectively share and collaborate on these files we utilized <a href="https://www.sketch.com/for-teams/">Sketch for Teams</a>.
+      </p>
+      <img class="mt-16" src="img/iconography.png">
+      <img class="mt-16" src="img/buttons.png">
+      <img class="mt-16" src="img/spacing.png">
+      <div class="mt-20">
+      <hr>
+      </div>
+      <h4 class="text-2xl font-bold text-gray-600 mt-20">
+      The design process
+      </h4>
+      <h3 class="text-4xl font-bold text-gray-800 mt-4">
+      Storybook and Zeplin for developer collaboration 
+      </h3>
+      <video class="mt-8" autoplay loop>
+      <source src="img/storybook-hero-video-optimized.mp4" type="video/mp4">
+      </video>
+      <p class="text-gray-700 text-xl mt-6 leading-10 mt-12">
+      With an optimized design library in place I needed to assure design and developer collaboration was seemless. I worked with our frontend developers to provide new component specs and CSS properties in Zeplin. Properties were based on Tailwind CSS utility classes and I was able to customize naming conventions to match our brand colors, typography, spacing, etc. All of these properties were then implemented into the Storybook library so the dev team could effectively build components for SPAs.
+      </p>
+      </div>
+      </section> 
+  
+  <!--Footer-->
+  <section class="pt-12 pb-20 bg-gray-300">
+        <div class="px-6 sm:m-auto xl:px-0 xl:max-w-5xl lg:max-w-4xl md:max-w-3xl justify-center">
+            <p class="uppercase text-sm font-bold">Onward to next project ></p>
+            <a href="case2.html">
+                <div>
+                    <h2 class="mt-4 text-2xl sm:text-5xl text-gray-400">
+                        Meadow Mountain
+                    </h2>
+                    <h5 class="mt-4 text-2xl sm:text-5xl text-gray-400">
+                        sub text
+                    </h5>
+                </div>
+            </a>
+        </div>
+        </div>
+        </div>
+    </section>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- external JS -->
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
